@@ -6,7 +6,7 @@
         nuxt-tryout
       </h1>
       <h2 class="subtitle">
-        Nuxt.js project
+        Nuxt.js project - Feature Tryout
       </h2>
       <div class="links">
         <a
