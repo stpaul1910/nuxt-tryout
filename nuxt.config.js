@@ -1,3 +1,9 @@
+const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
+  router: {
+    base: '/nuxt-tryout/'
+  }
+} : {}
+
 module.exports = {
   /*
   ** Headers of the page
@@ -34,15 +40,6 @@ module.exports = {
         })
       }
     }
-  }
-}
-
-const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
-  router: {
-    base: '/nuxt-tryout/'
-  }
-} : {}
-
-module.exports = {
-  ...routerBase
+  },
+  routerBase
 }
